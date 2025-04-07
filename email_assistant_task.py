@@ -164,7 +164,7 @@ if __name__ == "__main__":
         mail.logout()  # Logout after processing
 
 from transformers import pipeline
-# Loading the hugging face models for text classification and generation (mention the exact model.)
+# Loading the hugging face models for text classification and generation.
 
 classifier = pipeline("zero-shot-classification" , model = "facebook/bart-large-mnli")  # For intent detection
 generator = pipeline("text-generation", model="gpt2")  # For generating replies
